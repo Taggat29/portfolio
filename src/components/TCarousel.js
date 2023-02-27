@@ -8,6 +8,7 @@ import javascript from "../assets/javascript.svg";
 import material from "../assets/material-ui-1.svg";
 import github from "../assets/github.svg";
 import Skillcard from "./Skillcard";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,6 +53,9 @@ const slides = [
 ];
 
 export default function TCarousel() {
+
+  const matches = useMediaQuery('(max-width:767px');
+ 
   const settings = {
     dots: true,
     infinite: true,
@@ -71,25 +75,25 @@ export default function TCarousel() {
         },
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
         },
-      },
+      }
     ],
   };
   return (
-    <>
-      <Slider {...settings} style={{ maxWidth: 100 + "%", padding: 20 }}>
+    <>  
+      <Slider
+        {...settings}
+        className="carousel"
+        style={{ 
+          maxWidth: 100 + "%", 
+          padding: 20 
+        }}
+      >
         <Skillcard
           key={slides[0].alt}
           src={slides[0].src}

@@ -16,8 +16,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import InfoIcon from "@mui/icons-material/Info";
 import BuildIcon from "@mui/icons-material/Build";
@@ -115,7 +113,7 @@ export default function Navbar({ dwidth }) {
         <List>
           <ListItem
             component={"a"}
-            onClick={() => window.location("/")}
+            onClick={handleDrawerClose}
             href={
               "#"
             }
@@ -134,6 +132,7 @@ export default function Navbar({ dwidth }) {
               component={"a"}
               href={"#" + text}
               key={text}
+              onClick={handleDrawerClose}
               disablePadding
             >
               <ListItemButton>
@@ -148,10 +147,11 @@ export default function Navbar({ dwidth }) {
             component={"a"}
             target="_blank"
             href={
-              "https://drive.google.com/file/d/1Nt0P7fg_ymlhFpJ23H1uOfk9D7G6WveH/view?usp=sharing"
+              "https://drive.google.com/file/d/1Nt0P7fg_ymlhFpJ23H1uOfk9D7G6WveH/view?usp=share_link"
             }
             key={"Resume"}
             disablePadding
+            onClick={handleDrawerClose}
           >
             <ListItemButton>
               <ListItemIcon>

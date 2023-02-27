@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import Skills from './pages/Skills';
+import { Divider } from '@mui/material';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import './App.css';
@@ -20,8 +21,11 @@ function App() {
   return (
     <div>
       <Navbar dwidth={handleWidth}/>
+      <Divider />
       <About dwidth={drawerWidth} />
+      <Divider />
       <Skills dwidth={drawerWidth} />
+      <Divider />
       <Certifications dwidth={drawerWidth} />
     </div>
   );

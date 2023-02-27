@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, Toolbar, Typography, Grid } from "@mui/material";
 import planet from "../assets/Planet In Space.jpg";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function About({ dwidth }) {
   const [loaded, setLoaded] = useState(true);
@@ -37,7 +37,7 @@ export default function About({ dwidth }) {
               data-aos-duration="1500"
               data-aos-offset="200"
               src={planet}
-              style={{width: 100+"%", height: 100+"%"}}
+              style={{ width: 100 + "%", height: 100 + "%" }}
               alt="planet"
               onLoad={() => setLoaded(false)}
             />
@@ -61,10 +61,12 @@ export default function About({ dwidth }) {
                 Web Developer
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Enthusiastic and motivated self-learning in Information
-                Technology. Interested in exploring about Computer Network,
-                Cloud Computing, DevSecops, and Web Development. Now I am
-                looking for more experience in my field.
+                Junior web developer entusiasta e motivato. Interessato ad
+                esplorare framworks e librerie JavaScript, full stack
+                developing, creazione UI/UX e linguaggi di programmazione e
+                scripting. Sto correntemente cercando lavoro per fare più
+                esperienza nel mio campo, Attualmente in studio di Python per
+                espandere le mie conoscenze e capacità.
               </Typography>
             </div>
             <Grid gap={2} marginTop={2} container direction={"row"}>

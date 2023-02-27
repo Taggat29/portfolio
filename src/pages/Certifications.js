@@ -1,12 +1,10 @@
-import { Toolbar, Box, Grid } from "@mui/material";
-// import ImageList from "@mui/material/ImageList";
-// import ImageListItem from "@mui/material/ImageListItem";
-// import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { Toolbar, Box, Grid, Divider } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import planet from "../assets/Planet In Space.jpg";
+import udemy from '../assets/Modern React With Redux Udemy.jpg'
+import attestato from '../assets/Attestato.jpg'
 import "./pages.css";
 export default function Certifications({ dwidth }) {
   return (
@@ -45,9 +43,11 @@ export default function Certifications({ dwidth }) {
                 <CardMedia
                   component="img"
                   height="300"
+                  style={{objectFit: "contain", padding: 10}}
                   image={item.img}
-                  alt="green iguana"
+                  alt={item.title}
                 />
+                <Divider />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     {item.title}
@@ -56,7 +56,7 @@ export default function Certifications({ dwidth }) {
                     {item.subtitle}
                   </Typography>
                   <Typography marginTop={1} variant="body2" color="text.secondary">
-                    Clicca <a href={item.link}>Qui</a> per guardare
+                    Clicca <a href={item.link} rel="noreferrer" target="_blank">Qui</a> per guardare
                   </Typography>
                 </CardContent>
               </Card>
@@ -68,37 +68,17 @@ export default function Certifications({ dwidth }) {
   );
 }
 
-{
-  /* <ImageList sx={{ width: 1000, height: 450 }} cols={3} rowHeight={300}>
-            {itemData.map((item) => (
-              <ImageListItem key={item.img} sx={{margin: 2}}>
-                <img
-                  src={`${item.img}?w=248&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.title}
-                  loading="lazy"
-                />
-                <ImageListItemBar
-                  title={item.title}
-                  position="below"
-                  sx={{textAlign: "center"}}
-                />
-              </ImageListItem>
-            ))}
-          </ImageList> */
-}
-
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    img: attestato,
     title: "Diploma di qualifica regionale da Web Developer",
     subtitle: "Ottenuto ad Ottobre 2022 presso CEFI Informatica srl e riconosciuto dalla Regione Lazio",
-    link: "https://google.com",
+    link: "https://drive.google.com/file/d/1U9ieTUrigzpjusFxyDaIXHgEms2Gq5P1/view?usp=share_link",
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: 'Attestato Udemy "React with modern Redux"',
-    subtitle: "Attestato ottenuto presso",
-    link: "https://google.com",
+    img: udemy,
+    title: 'Udemy "React with modern Redux"',
+    subtitle: "Attestato ottenuto sulla piattaforma Udemy a Gennaio 2023",
+    link: "https://drive.google.com/file/d/1nF7VuQpH8IIS_5gLXUwoLD5i2MonLAhl/view?usp=share_link",
   },
 ];
