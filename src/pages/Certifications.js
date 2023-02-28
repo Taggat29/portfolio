@@ -1,4 +1,4 @@
-import { Box, Grid, Divider, useMediaQuery } from "@mui/material";
+import { Box, Grid, Divider } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -7,7 +7,7 @@ import udemy from '../assets/Modern React With Redux Udemy.jpg'
 import attestato from '../assets/Attestato.jpg'
 import "./pages.css";
 export default function Certifications({ dwidth }) {
-  const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
+
   return (
     <>
       <Box
