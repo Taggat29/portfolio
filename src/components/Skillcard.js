@@ -40,26 +40,3 @@ export default function Skillcard({ src, alt }) {
     </Container>
   );
 }
-
-{
-  /* <ImageList sx={{ width: 500, height: 450 }}></ImageList> */
-}
-// </ImageList>
-
-// {/* <Card sx={{ maxWidth: 500, margin: 0+" auto" }}>
-//         <CardMedia
-//           component="img"
-//           /* height="140" */
-//           style={{maxHeight: 250+"px"}}
-//           image={src}
-//           alt={alt}
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="div">
-//             {alt}
-//           </Typography>
-//           <Typography variant="body2" color="text.secondary">
-//             1 year of experience
-//           </Typography>
-//         </CardContent>
-//     </Card> */}
