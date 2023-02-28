@@ -34,7 +34,7 @@ export default function Certifications({ dwidth }) {
               <Card
                 sx={{
                   maxWidth: 375,
-                  height: 600,
+                  height: 500,
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -44,7 +44,7 @@ export default function Certifications({ dwidth }) {
                 <CardMedia
                   component="img"
                   height="300"
-                  style={{objectFit: "contain", padding: 10}}
+                  style={{objectFit: "contain", padding: 5}}
                   image={item.img}
                   alt={item.title}
                 />
