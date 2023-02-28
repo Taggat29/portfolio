@@ -23,14 +23,14 @@ function App() {
   return (
     <div>
       <Navbar dwidth={handleWidth} />
-      <Container maxWidth>
+      
         <Divider />
         <About dwidth={drawerWidth} />
         <Divider />
         <Skills dwidth={drawerWidth} />
         <Divider />
         <Certifications dwidth={drawerWidth} />
-      </Container>
+      
       {matches ? <Container maxWidth style={{ marginTop: 100+"px"}}><Divider /> <Footer /></Container> : null}
     </div>
   );
