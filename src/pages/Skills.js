@@ -1,6 +1,7 @@
-import { Toolbar, Box, Grid } from "@mui/material";
+import { Toolbar, Box, Grid, useMediaQuery } from "@mui/material";
 import TCarousel from "../components/TCarousel";
 export default function Skills({ dwidth }) {
+  const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
   return (
     <>
       <Box
@@ -19,7 +20,7 @@ export default function Skills({ dwidth }) {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          padding={15}
+          padding={matches ? 15 : 2}
         >
           <TCarousel />
         </Grid>

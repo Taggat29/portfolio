@@ -8,7 +8,7 @@ import javascript from "../assets/javascript.svg";
 import material from "../assets/material-ui-1.svg";
 import github from "../assets/github.svg";
 import Skillcard from "./Skillcard";
-import './tcarousel.css'
+import "./tcarousel.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,7 +53,6 @@ const slides = [
 ];
 
 export default function TCarousel() {
- 
   const settings = {
     dots: true,
     infinite: true,
@@ -75,8 +74,8 @@ export default function TCarousel() {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           initialSlide: 0,
         },
       },
@@ -87,14 +86,23 @@ export default function TCarousel() {
           slidesToScroll: 1,
           initialSlide: 1,
         },
-      }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
     ],
   };
   return (
-    <>  
+    <>
       <Slider
-        {...settings}
         className="carousel"
+        {...settings}
+
         /* style={{ 
           maxWidth: 100 + "%", 
           padding: 20 

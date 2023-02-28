@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Box, Toolbar, Typography, Grid } from "@mui/material";
+import { Box, Toolbar, Typography, Grid, useMediaQuery } from "@mui/material";
 import code from "../assets/code-snippet.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function About({ dwidth }) {
+  const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
   const [loaded, setLoaded] = useState(true);
 
   return (
@@ -24,12 +25,13 @@ export default function About({ dwidth }) {
             Loading...
           </div>
         ) : null}
+        
         <Grid
           container
           direction="row"
           justifyContent="center"
           alignItems="center"
-          padding={15}
+          padding={matches ? 15 : 2}
         >
           <Grid xs={12} sm={6} padding={2}>
             <img
