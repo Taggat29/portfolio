@@ -14,7 +14,7 @@ export default function Skills({ dwidth }) {
           width: { sm: `calc(100% - ${dwidth}px)` },
         }}
       >
-        {!matches ? <Toolbar style={{marginBottom: 125}} /> : null }
+        {!matches ? <Toolbar style={{marginBottom: 90}} /> : null }
         <Toolbar />
         <Grid
           container
