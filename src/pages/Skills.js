@@ -14,6 +14,7 @@ export default function Skills({ dwidth }) {
           width: { sm: `calc(100% - ${dwidth}px)` },
         }}
       >
+        {!matches ? <Toolbar style={{marginBottom: 125}} /> : null }
         <Toolbar />
         <Grid
           container
@@ -21,6 +22,7 @@ export default function Skills({ dwidth }) {
           justifyContent="center"
           alignItems="center"
           padding={matches ? 15 : 2}
+          
         >
           <TCarousel />
         </Grid>
