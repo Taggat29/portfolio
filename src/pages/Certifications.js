@@ -3,8 +3,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import udemy from '../assets/Modern React With Redux Udemy.jpg'
-import attestato from '../assets/Attestato.jpg'
+import udemy from '../assets/udemy-logo.png'
+import attestato from '../assets/regionelazio-logo.png'
 import "./pages.css";
 export default function Certifications({ dwidth }) {
 
@@ -56,9 +56,6 @@ export default function Certifications({ dwidth }) {
                   <Typography variant="body2" color="text.secondary">
                     {item.subtitle}
                   </Typography>
-                  <Typography marginTop={1} variant="body2" color="text.secondary">
-                    Clicca <a href={item.link} rel="noreferrer" target="_blank">Qui</a> per guardare
-                  </Typography>
                 </CardContent>
               </Card>
             );
@@ -74,12 +71,10 @@ const itemData = [
     img: attestato,
     title: "Diploma di qualifica regionale da Web Developer",
     subtitle: "Ottenuto ad Ottobre 2022 presso CEFI Informatica srl e riconosciuto dalla Regione Lazio",
-    link: "https://drive.google.com/file/d/1U9ieTUrigzpjusFxyDaIXHgEms2Gq5P1/view?usp=share_link",
   },
   {
     img: udemy,
     title: 'Udemy "React with modern Redux"',
     subtitle: "Attestato ottenuto su piattaforma Udemy a Gennaio 2023",
-    link: "https://drive.google.com/file/d/1nF7VuQpH8IIS_5gLXUwoLD5i2MonLAhl/view?usp=share_link",
   },
 ];
