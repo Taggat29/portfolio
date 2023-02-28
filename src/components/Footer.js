@@ -23,7 +23,7 @@ export default function Footer() {
             direction={"row"}
             marginBottom={2}
           >
-            <a href="#">About</a>|<a href="#Skills">Skills</a>|
+            <a href="#About">About</a>|<a href="#Skills">Skills</a>|
             <a href="#Certifications">Certificazioni</a>|
             <a
               href="https://drive.google.com/file/d/1Nt0P7fg_ymlhFpJ23H1uOfk9D7G6WveH/view?usp=share_link"
