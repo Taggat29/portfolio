@@ -19,8 +19,8 @@ export default function Certifications({ dwidth }) {
           width: { sm: `calc(100% - ${dwidth}px)` },
         }}
       >
-        <Toolbar />
         <Grid
+        className="certs"
           container
           direction="row"
           justifyContent="center"
@@ -33,11 +33,11 @@ export default function Certifications({ dwidth }) {
               <Card
                 sx={{
                   maxWidth: 345,
-                  height: 500,
+                  height: 600,
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  margin: 2,
+                  margin: 10,
                 }}
               >
                 <CardMedia
@@ -78,7 +78,7 @@ const itemData = [
   {
     img: udemy,
     title: 'Udemy "React with modern Redux"',
-    subtitle: "Attestato ottenuto sulla piattaforma Udemy a Gennaio 2023",
+    subtitle: "Attestato ottenuto su piattaforma Udemy a Gennaio 2023",
     link: "https://drive.google.com/file/d/1nF7VuQpH8IIS_5gLXUwoLD5i2MonLAhl/view?usp=share_link",
   },
 ];

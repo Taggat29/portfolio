@@ -74,8 +74,10 @@ export default function Navbar({ dwidth }) {
             noWrap
             sx={{ flexGrow: 1, alignItems: "center" }}
             component="div"
+            className="logo"
+            onClick={() => {window.scrollTo(0,0)}}
           >
-            <img src={logo} alt="logo" className="App-logo" />
+             <img src={logo} alt="logo" className="App-logo" />
           </Typography>
           <IconButton
             color="inherit"
@@ -114,9 +116,7 @@ export default function Navbar({ dwidth }) {
           <ListItem
             component={"a"}
             onClick={handleDrawerClose}
-            href={
-              "#"
-            }
+            href={"#"}
             key={"About"}
             disablePadding
           >

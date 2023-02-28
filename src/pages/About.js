@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, Toolbar, Typography, Grid } from "@mui/material";
-import planet from "../assets/Planet In Space.jpg";
+import code from "../assets/code-snippet.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -36,7 +36,7 @@ export default function About({ dwidth }) {
               data-aos="flip-right"
               data-aos-duration="1500"
               data-aos-offset="200"
-              src={planet}
+              src={code}
               style={{ width: 100 + "%", height: 100 + "%" }}
               alt="planet"
               onLoad={() => setLoaded(false)}
@@ -52,7 +52,7 @@ export default function About({ dwidth }) {
           >
             <div className="flex flex-col w-full mt-8">
               <Typography variant="subtitle1" gutterBottom>
-                Hi I'm
+                Salve, sono
               </Typography>
               <Typography variant="h4" gutterBottom>
                 Tito Maffeo
@@ -65,7 +65,7 @@ export default function About({ dwidth }) {
                 esplorare framworks e librerie JavaScript, full stack
                 developing, creazione UI/UX e linguaggi di programmazione e
                 scripting. Sto correntemente cercando lavoro per fare più
-                esperienza nel mio campo, Attualmente in studio di Python per
+                esperienza nel mio campo. Attualmente sto studiando Python per
                 espandere le mie conoscenze e capacità.
               </Typography>
             </div>
@@ -75,14 +75,14 @@ export default function About({ dwidth }) {
                 rel="noreferrer"
                 target="_blank"
               >
-                <GitHubIcon />
+                <GitHubIcon sx={{fontSize: 35}}/>
               </a>
               <a
                 href="https://www.linkedin.com/in/tito-maffeo-1583b323b/"
                 rel="noreferrer"
                 target="_blank"
               >
-                <LinkedInIcon />
+                <LinkedInIcon sx={{fontSize: 35}}/>
               </a>
             </Grid>
           </Grid>
