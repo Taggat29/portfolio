@@ -5,7 +5,7 @@ export default function Skills({ dwidth }) {
   return (
     <>
       <Box
-        className="center"
+        className={matches ? "center" : null}
         id="Skills"
         component="main"
         sx={{
@@ -15,7 +15,7 @@ export default function Skills({ dwidth }) {
         }}
       >
         {!matches ? <Toolbar style={{marginBottom: 90}} /> : null }
-        <Toolbar />
+        {/* <Toolbar /> */}
         <Grid
           container
           direction="row"
