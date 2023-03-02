@@ -11,6 +11,7 @@ export default function About({ dwidth }) {
   return (
     <>
       <Box
+        className="center"
         id="About"
         component="main"
         sx={{
