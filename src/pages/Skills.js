@@ -1,21 +1,20 @@
-import { Toolbar, Box, Grid, useMediaQuery } from "@mui/material";
+import { Box, Grid, useMediaQuery } from "@mui/material";
 import TCarousel from "../components/TCarousel";
 export default function Skills({ dwidth }) {
   const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
   return (
     <>
       <Box
-        className={matches ? "center" : null}
+        className="center"
         id="Skills"
         component="main"
         sx={{
           flexGrow: 1,
           p: 3,
           width: { sm: `calc(100% - ${dwidth}px)` },
+          height: 100+"vh"
         }}
       >
-        {!matches ? <Toolbar style={{marginBottom: 90}} /> : null }
-        {/* <Toolbar /> */}
         <Grid
           container
           direction="row"
