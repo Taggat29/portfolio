@@ -1,4 +1,4 @@
-import { Box, Grid, Divider } from "@mui/material";
+import { Box, Grid, Divider, useMediaQuery } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -7,11 +7,12 @@ import udemy from '../assets/udemy-logo.png'
 import attestato from '../assets/regionelazio-logo.png'
 import "./pages.css";
 export default function Certifications({ dwidth }) {
+  const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
   return (
     <>
       <Box
-        className="center"
+        className={matches ? "center" : null}
         id="Certifications"
         component="main"
         sx={{
@@ -26,7 +27,6 @@ export default function Certifications({ dwidth }) {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          margin={0 + " auto"}
           /* padding={matches ? 0 : 2} */
         >
           {itemData.map((item, index) => {
